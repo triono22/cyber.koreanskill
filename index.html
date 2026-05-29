@@ -1,258 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AetherAcademy - Modern Learning Platform</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portal Pendaftaran Sejong Cyber University</title>
+  <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/60a5fa/graduation-cap.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Premium Glowing Background Elements -->
-    <div class="glow-bg">
-        <div class="glow-orb orb-1"></div>
-        <div class="glow-orb orb-2"></div>
-        <div class="glow-orb orb-3"></div>
+  <nav>
+    <div class="nav-inner">
+      <div class="logo">🎓 SJCU Global Center</div>
+      <ul class="nav-links">
+        <li><a href="#panduan">Panduan Pendaftaran</a></li>
+        <li><a href="#dokumen">Dokumen</a></li>
+        <li><a href="#prosedur">Tahapan</a></li>
+        <li><a href="#pembelajaran">Pembelajaran</a></li>
+        <li><a href="https://koreanskill.pythonanywhere.com/" class="nav-btn"><img src="classroom.png" alt="" class="nav-icon"> Ruang Kelas</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- Navigation Bar -->
-    <header class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <span class="logo-icon"><i class="fa-solid fa-cube animate-spin"></i></span>
-                Aether<span class="logo-accent">Academy</span>
-            </a>
-            <nav class="nav-links">
-                <a href="#courses" class="nav-link active">Courses</a>
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#mentors" class="nav-link">Mentors</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
-            </nav>
-            <div class="nav-actions">
-                <a href="#login" class="btn-secondary">Log In</a>
-                <a href="#register" class="btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-            <button class="mobile-menu-toggle" id="menuToggle">
-                <i class="fa-solid fa-bars-staggered"></i>
-            </button>
-        </div>
-    </header>
+  <div style="padding: 0 2rem;" class="reveal">
+    <img src="banner.jpeg" alt="Pendaftaran Mahasiswa Asing" class="hero-banner">
+  </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="badge-premium">
-                    <span class="badge-icon"><i class="fa-solid fa-sparkles"></i></span>
-                    Next Generation Learning
-                </div>
-                <h1 class="hero-title">
-                    Master the Tech Skills of the <span class="gradient-text">Future</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Dive into interactive courses led by industry experts. Learn coding, artificial intelligence, product design, and business strategy at your own pace.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#courses" class="btn-primary btn-large">Explore Courses <i class="fa-solid fa-compass"></i></a>
-                    <a href="#demo" class="btn-glass btn-large"><i class="fa-solid fa-play"></i> Watch Demo</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">15K+</span>
-                        <span class="stat-label">Students</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number">120+</span>
-                        <span class="stat-label">Premium Courses</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number">4.9<i class="fa-solid fa-star star-icon"></i></span>
-                        <span class="stat-label">Rating</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="hero-visual">
-                <div class="dashboard-preview">
-                    <div class="preview-header">
-                        <div class="dots">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <div class="preview-title">Aether Platform v1.2</div>
-                    </div>
-                    <div class="preview-body">
-                        <div class="preview-sidebar">
-                            <div class="sidebar-item active"><i class="fa-solid fa-chart-pie"></i></div>
-                            <div class="sidebar-item"><i class="fa-solid fa-book-open"></i></div>
-                            <div class="sidebar-item"><i class="fa-solid fa-graduation-cap"></i></div>
-                            <div class="sidebar-item"><i class="fa-solid fa-user-group"></i></div>
-                        </div>
-                        <div class="preview-main">
-                            <div class="card-glow">
-                                <div class="card-header-flex">
-                                    <h3>Advanced AI Mastery</h3>
-                                    <span class="progress-badge">68% Done</span>
-                                </div>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar-fill" style="width: 68%"></div>
-                                </div>
-                                <div class="card-footer-flex">
-                                    <div class="mentor-info">
-                                        <div class="mentor-avatar">AI</div>
-                                        <span>Dr. Sarah Jenkins</span>
-                                    </div>
-                                    <a href="#" class="btn-play-mini"><i class="fa-solid fa-play"></i></a>
-                                </div>
-                            </div>
-                            <div class="preview-grid">
-                                <div class="mini-card">
-                                    <i class="fa-solid fa-clock-three"></i>
-                                    <span>24h Left</span>
-                                </div>
-                                <div class="mini-card">
-                                    <i class="fa-solid fa-certificate"></i>
-                                    <span>Verified</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="hero reveal">
+    <div class="badge">🇰🇷 Sejong Cyber University — Global Center</div>
+    <h1>Portal Informasi<br><span>Pendaftaran Mahasiswa Asing</span></h1>
+    <p>Pusat Sejong Global mendukung mahasiswa asing dan calon pendaftar untuk menetap dan berkehidupan layak di Korea
+    </p>
+    <a href="https://wa.me/821084690945" target="_blank" class="btn btn-wa" style="margin-top:1rem">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg> Hubungi via WhatsApp
+    </a>
+  </div>
 
-    <!-- Course Section -->
-    <section id="courses" class="courses">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Popular Professional <span class="gradient-text">Courses</span></h2>
-                <p class="section-subtitle">Boost your career with our highly requested interactive syllabus</p>
-            </div>
-            <div class="courses-grid">
-                <!-- Course Card 1 -->
-                <div class="course-card">
-                    <div class="course-image">
-                        <div class="course-tag">Artificial Intelligence</div>
-                        <i class="fa-solid fa-brain course-placeholder-icon"></i>
-                    </div>
-                    <div class="course-body">
-                        <h3 class="course-title">Applied Machine Learning & Neural Networks</h3>
-                        <p class="course-desc">Learn how to build, train, and deploy advanced artificial neural networks from scratch using PyTorch.</p>
-                        <div class="course-meta">
-                            <span><i class="fa-solid fa-clock"></i> 32 hours</span>
-                            <span><i class="fa-solid fa-layer-group"></i> Intermediate</span>
-                        </div>
-                        <div class="course-footer">
-                            <div class="course-price">$89.00</div>
-                            <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+  <!-- SECTION 1: PANDUAN -->
+  <section id="panduan" class="reveal">
+    <div class="section-header">
+      <h2>📋 Panduan Pendaftaran</h2>
+      <p>Informasi kualifikasi dan keuntungan mendaftar sebagai mahasiswa asing</p>
+    </div>
+    <div class="grid-2">
+      <div class="card reveal">
+        <h3>① Mahasiswa Baru (Tahun 1)</h3>
+        <ul class="check">
+          <li>Lulusan SMA atau calon lulusan</li>
+          <li>Kualifikasi akademis setara SMA ke atas</li>
+          <li>Dapat mendaftar tanpa visa</li>
+          <li>Mahasiswa luar negeri dapat mendaftar</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>② Transfer / Pindahan (Tahun 2–3)</h3>
+        <ul class="check">
+          <li>Lulusan D3 / Diploma</li>
+          <li>Telah menempuh SKS tertentu di universitas 4 tahun</li>
+          <li>Dalam maupun luar negeri</li>
+          <li>Biaya kuliah tetap 4 tahun (luar negeri)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card reveal">
+        <h3>🎁 Beasiswa</h3>
+        <ul class="check">
+          <li>Mahasiswa dalam negeri: 50% (~750.000 won/semester)</li>
+          <li>Mahasiswa luar negeri: 80% (~300.000 won/semester)</li>
+          <li>Beasiswa 80% berlaku hingga lulus</li>
+          <li>Beasiswa prestasi akademik tersedia</li>
+          <li>※ Besaran berbeda tergantung jurusan & semester</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>🛂 Keuntungan Visa & Imigrasi</h3>
+        <ul class="check">
+          <li>Diakui sebagai poin akademis untuk izin tinggal E-7-4</li>
+          <li>Ijazah SJCU diakui resmi untuk izin tinggal F-5-10</li>
+          <li>Surat rekomendasi untuk visa D-2 (mahasiswa)</li>
+          <li>Dukungan undangan bagi lulusan yang sudah di luar negeri</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card reveal">
+      <h3>🎯 Prioritas & Target Pendaftar</h3>
+      <span class="tag">Peserta EPS-TOPIK</span>
+      <span class="tag">Direkomendasikan mitra luar negeri</span>
+      <span class="tag">Pemegang visa E-9</span>
+      <span class="tag">Calon pemegang F-6</span>
+      <span class="tag">Warga Korea yang kembali dari luar negeri</span>
+    </div>
+    <div class="btn-center">
+      <a href="https://cms.sjcu.ac.kr/global/program/admission.do" target="_blank" class="btn">🔗 Lihat Sumber Asli (Korea)</a>
+    </div>
+  </section>
 
-                <!-- Course Card 2 -->
-                <div class="course-card">
-                    <div class="course-image">
-                        <div class="course-tag">Full-Stack Dev</div>
-                        <i class="fa-solid fa-code course-placeholder-icon"></i>
-                    </div>
-                    <div class="course-body">
-                        <h3 class="course-title">Next.js 14 & Node.js Enterprise Systems</h3>
-                        <p class="course-desc">Architect scalable modern web systems with Next.js App Router, Server Actions, Prisma, and PostgreSQL.</p>
-                        <div class="course-meta">
-                            <span><i class="fa-solid fa-clock"></i> 48 hours</span>
-                            <span><i class="fa-solid fa-layer-group"></i> Advanced</span>
-                        </div>
-                        <div class="course-footer">
-                            <div class="course-price">$120.00</div>
-                            <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+  <!-- SECTION 2: DOKUMEN -->
+  <section id="dokumen" class="reveal">
+    <div class="section-header">
+      <h2>📁 Dokumen Pendaftaran</h2>
+      <p>Daftar dokumen wajib yang perlu disiapkan sebelum mendaftar</p>
+    </div>
+    <div class="card reveal">
+      <h3>📄 Mahasiswa Baru (신입학)</h3>
+      <table>
+        <tr>
+          <th>No</th>
+          <th>Nama Dokumen</th>
+          <th>Keterangan</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Formulir Pendaftaran Online</td>
+          <td>Diisi melalui portal resmi SJCU</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ijazah SMA / Surat Keterangan Lulus</td>
+          <td>Asli atau salinan yang dilegalisir</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Transkrip Nilai SMA</td>
+          <td>Nilai selama masa SMA</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Salinan Paspor</td>
+          <td>Halaman data diri yang masih berlaku</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Foto Ukuran Paspor</td>
+          <td>Format digital atau cetak</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Sertifikat EPS-TOPIK (jika ada)</td>
+          <td>Untuk mendapat prioritas seleksi</td>
+        </tr>
+      </table>
+    </div>
+    <div class="card reveal">
+      <h3>📄 Pindahan / Transfer (편입학)</h3>
+      <table>
+        <tr>
+          <th>No</th>
+          <th>Nama Dokumen</th>
+          <th>Keterangan</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Ijazah Perguruan Tinggi Sebelumnya</td>
+          <td>D3 / S1 — asli atau legalisir</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Transkrip Nilai Perguruan Tinggi</td>
+          <td>Semua semester yang telah ditempuh</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Surat Keterangan Pengakuan SKS</td>
+          <td>Dari kampus asal (jika ada)</td>
+        </tr>
+      </table>
+    </div>
+    <div class="info-box reveal">⚠️ Dokumen dari luar Korea mungkin memerlukan legalisasi (apostille). Selalu periksa persyaratan terbaru di halaman resmi sebelum mendaftar.</div>
+    <div class="btn-center">
+      <a href="https://cms.sjcu.ac.kr/global/program/documents.do" target="_blank" class="btn">🔗 Lihat Sumber Asli (Korea)</a>
+    </div>
+  </section>
 
-                <!-- Course Card 3 -->
-                <div class="course-card">
-                    <div class="course-image">
-                        <div class="course-tag">UI/UX Design</div>
-                        <i class="fa-solid fa-pen-nib course-placeholder-icon"></i>
-                    </div>
-                    <div class="course-body">
-                        <h3 class="course-title">Interactive Design Systems & Figma Mastery</h3>
-                        <p class="course-desc">Create reusable UI component libraries, responsive grids, micro-interactions, and beautiful interactive design guidelines.</p>
-                        <div class="course-meta">
-                            <span><i class="fa-solid fa-clock"></i> 24 hours</span>
-                            <span><i class="fa-solid fa-layer-group"></i> Beginner</span>
-                        </div>
-                        <div class="course-footer">
-                            <div class="course-price">$75.00</div>
-                            <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- SECTION 3: PROSEDUR -->
+  <section id="prosedur" class="reveal">
+    <div class="section-header">
+      <h2>🪜 Tahapan Pendaftaran</h2>
+      <p>Ikuti 7 langkah mudah berikut untuk mendaftar ke Sejong Cyber University</p>
+    </div>
+    <div class="step-flow reveal">
+      <div class="step">
+        <div class="num">01</div>
+        <p>Cek Jadwal Penerimaan</p>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <p>Siapkan Dokumen</p>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <p>Isi Formulir Online</p>
+      </div>
+      <div class="step">
+        <div class="num">04</div>
+        <p>Pengumuman Kelulusan</p>
+      </div>
+      <div class="step">
+        <div class="num">05</div>
+        <p>Bayar Biaya Kuliah</p>
+      </div>
+      <div class="step">
+        <div class="num">06</div>
+        <p>Ambil Mata Kuliah</p>
+      </div>
+      <div class="step">
+        <div class="num">07</div>
+        <p>Mulai Perkuliahan</p>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card reveal">
+        <h3>📝 Detail Setiap Tahap</h3>
+        <ul class="check">
+          <li>STEP 01 — Periksa jadwal & periode penerimaan</li>
+          <li>STEP 02 — Kumpulkan semua dokumen wajib</li>
+          <li>STEP 03 — Isi formulir online di portal SJCU</li>
+          <li>STEP 04 — Tunggu & cek hasil seleksi</li>
+          <li>STEP 05 — Bayar uang kuliah sesuai tagihan</li>
+          <li>STEP 06 — Pilih & daftarkan mata kuliah</li>
+          <li>STEP 07 — Ikuti perkuliahan online aktif</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>🌐 Pendaftaran Online</h3>
+        <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;margin-bottom:1rem">Seluruh proses pendaftaran dilakukan secara online melalui portal resmi Sejong Cyber University. Tidak perlu hadir secara fisik.</p>
+        <a href="https://go.sjcu.ac.kr/go/admission-uni/applyStep1.do" target="_blank" class="btn" style="margin-top:0.5rem">🖊 Daftar Sekarang</a>
+        <br>
+        <a href="https://wa.me/821084690945" target="_blank" class="btn btn-wa" style="margin-top:0.75rem">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg> Hubungi via WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="btn-center">
+      <a href="https://cms.sjcu.ac.kr/global/program/procedure.do" target="_blank" class="btn">🔗 Lihat Sumber Asli (Korea)</a>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
-                        Aether<span class="logo-accent">Academy</span>
-                    </a>
-                    <p class="footer-desc">Redefining learning technology with beautiful interfaces and immersive educational workflows.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-discord"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Platform</h4>
-                    <a href="#">Courses</a>
-                    <a href="#">Mentors</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Scholarships</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <a href="#">About Us</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Press Kit</a>
-                    <a href="#">Contact</a>
-                </div>
-                <div class="footer-newsletter">
-                    <h4>Subscribe to Updates</h4>
-                    <p>Get the latest course releases and technology guides straight to your inbox.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address" required>
-                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 AetherAcademy. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <!-- SECTION 4: PEMBELAJARAN -->
+  <section id="pembelajaran" class="reveal">
+    <div class="section-header">
+      <h2>💻 Metode Pembelajaran</h2>
+      <p>Sistem perkuliahan online 100% yang fleksibel dan modern</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal">
+        <h3>🌐 100% Online</h3>
+        <p style="color:rgba(255,255,255,0.75);font-size:0.88rem">Kuliah dapat diakses dari mana saja di seluruh dunia, kapan saja tanpa batas waktu.</p>
+      </div>
+      <div class="card reveal">
+        <h3>📱 Multi-Platform</h3>
+        <p style="color:rgba(255,255,255,0.75);font-size:0.88rem">Tersedia di PC, tablet, dan smartphone. Belajar sesuai perangkat yang Anda miliki.</p>
+      </div>
+      <div class="card reveal">
+        <h3>🎬 Video Kuliah</h3>
+        <p style="color:rgba(255,255,255,0.75);font-size:0.88rem">Materi tersedia dalam format video yang dapat ditonton berulang kali sesuai kebutuhan.</p>
+      </div>
+      <div class="card reveal">
+        <h3>📝 Tugas & Kuis Online</h3>
+        <p style="color:rgba(255,255,255,0.75);font-size:0.88rem">Pengumpulan tugas dan ujian dilakukan melalui sistem LMS secara digital.</p>
+      </div>
+      <div class="card reveal">
+        <h3>💬 Forum Diskusi</h3>
+        <p style="color:rgba(255,255,255,0.75);font-size:0.88rem">Interaksi aktif antara dosen dan mahasiswa melalui forum diskusi online.</p>
+      </div>
+      <div class="card reveal">
+        <h3>📊 Pantau Kemajuan</h3>
+        <p style="color:rgba(255,255,255,0.75);font-size:0.88rem">Nilai, kehadiran, dan progres belajar dapat dipantau secara real-time di portal.</p>
+      </div>
+    </div>
+    <div class="card reveal">
+      <h3>🛠 Bantuan Teknis Tersedia</h3>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.5rem">
+        <span class="tag">💻 Remote PC Support</span>
+        <span class="tag">❓ FAQ</span>
+        <span class="tag">📩 Tanya Jawab Online</span>
+        <span class="tag">🌍 Dukungan Mahasiswa Asing</span>
+      </div>
+    </div>
+    <div class="btn-center">
+      <a href="https://cms.sjcu.ac.kr/global/program/learning.do" target="_blank" class="btn">🔗 Lihat Sumber Asli (Korea)</a>
+    </div>
+  </section>
 
-    <!-- Interactive JS Script -->
-    <script src="main.js"></script>
+  <footer>
+    <p>📞 Telp: <a href="tel:02-2204-8000">02-2204-8000</a> &nbsp;|&nbsp; Global Center: <a href="tel:02-2204-8625">02-2204-8625</a></p>
+    <p style="margin-top:0.5rem">✉ <a href="mailto:webmaster@sjcu.ac.kr">webmaster@sjcu.ac.kr</a> &nbsp;|&nbsp; <a href="https://cms.sjcu.ac.kr/global/" target="_blank">Website Resmi SJCU Global Center</a></p>
+    <p style="margin-top:1rem;color:rgba(255,255,255,0.3);font-size:0.75rem">Portal Informasi Pendaftaran — Sejong Cyber University Global Center | Konten diterjemahkan dari bahasa Korea</p>
+  </footer>
+
+  <a href="https://forms.gle/82nUjZ7GSsAnAf3i6" target="_blank" class="floating-btn floating-cta" title="Daftar Sekarang">
+    <span>Daftar Sekarang</span>
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+      <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+    </svg>
+  </a>
+
+  <a href="https://koreanskill.pythonanywhere.com/" class="floating-btn floating-classroom" title="Ruang Kelas">
+    <img src="classroom.png" alt="" class="nav-icon">
+    <span>Ruang Kelas</span>
+  </a>
+
+  <a href="https://wa.me/821084690945" target="_blank" class="floating-btn floating-wa" title="Whatsapp Me">
+    <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span>Hubungi via WhatsApp</span>
+  </a>
+
+  <button id="backToTop" title="Kembali ke Atas">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
