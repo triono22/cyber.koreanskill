@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AetherAcademy - Modern Learning Platform</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Premium Glowing Background Elements -->
+    <div class="glow-bg">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-cube animate-spin"></i></span>
+                Aether<span class="logo-accent">Academy</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#courses" class="nav-link active">Courses</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#mentors" class="nav-link">Mentors</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#login" class="btn-secondary">Log In</a>
+                <a href="#register" class="btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <button class="mobile-menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge-premium">
+                    <span class="badge-icon"><i class="fa-solid fa-sparkles"></i></span>
+                    Next Generation Learning
+                </div>
+                <h1 class="hero-title">
+                    Master the Tech Skills of the <span class="gradient-text">Future</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Dive into interactive courses led by industry experts. Learn coding, artificial intelligence, product design, and business strategy at your own pace.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn-primary btn-large">Explore Courses <i class="fa-solid fa-compass"></i></a>
+                    <a href="#demo" class="btn-glass btn-large"><i class="fa-solid fa-play"></i> Watch Demo</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15K+</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">120+</span>
+                        <span class="stat-label">Premium Courses</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9<i class="fa-solid fa-star star-icon"></i></span>
+                        <span class="stat-label">Rating</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="preview-header">
+                        <div class="dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="preview-title">Aether Platform v1.2</div>
+                    </div>
+                    <div class="preview-body">
+                        <div class="preview-sidebar">
+                            <div class="sidebar-item active"><i class="fa-solid fa-chart-pie"></i></div>
+                            <div class="sidebar-item"><i class="fa-solid fa-book-open"></i></div>
+                            <div class="sidebar-item"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="sidebar-item"><i class="fa-solid fa-user-group"></i></div>
+                        </div>
+                        <div class="preview-main">
+                            <div class="card-glow">
+                                <div class="card-header-flex">
+                                    <h3>Advanced AI Mastery</h3>
+                                    <span class="progress-badge">68% Done</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" style="width: 68%"></div>
+                                </div>
+                                <div class="card-footer-flex">
+                                    <div class="mentor-info">
+                                        <div class="mentor-avatar">AI</div>
+                                        <span>Dr. Sarah Jenkins</span>
+                                    </div>
+                                    <a href="#" class="btn-play-mini"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="preview-grid">
+                                <div class="mini-card">
+                                    <i class="fa-solid fa-clock-three"></i>
+                                    <span>24h Left</span>
+                                </div>
+                                <div class="mini-card">
+                                    <i class="fa-solid fa-certificate"></i>
+                                    <span>Verified</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Professional <span class="gradient-text">Courses</span></h2>
+                <p class="section-subtitle">Boost your career with our highly requested interactive syllabus</p>
+            </div>
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-tag">Artificial Intelligence</div>
+                        <i class="fa-solid fa-brain course-placeholder-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <h3 class="course-title">Applied Machine Learning & Neural Networks</h3>
+                        <p class="course-desc">Learn how to build, train, and deploy advanced artificial neural networks from scratch using PyTorch.</p>
+                        <div class="course-meta">
+                            <span><i class="fa-solid fa-clock"></i> 32 hours</span>
+                            <span><i class="fa-solid fa-layer-group"></i> Intermediate</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">$89.00</div>
+                            <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-tag">Full-Stack Dev</div>
+                        <i class="fa-solid fa-code course-placeholder-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <h3 class="course-title">Next.js 14 & Node.js Enterprise Systems</h3>
+                        <p class="course-desc">Architect scalable modern web systems with Next.js App Router, Server Actions, Prisma, and PostgreSQL.</p>
+                        <div class="course-meta">
+                            <span><i class="fa-solid fa-clock"></i> 48 hours</span>
+                            <span><i class="fa-solid fa-layer-group"></i> Advanced</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">$120.00</div>
+                            <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-tag">UI/UX Design</div>
+                        <i class="fa-solid fa-pen-nib course-placeholder-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <h3 class="course-title">Interactive Design Systems & Figma Mastery</h3>
+                        <p class="course-desc">Create reusable UI component libraries, responsive grids, micro-interactions, and beautiful interactive design guidelines.</p>
+                        <div class="course-meta">
+                            <span><i class="fa-solid fa-clock"></i> 24 hours</span>
+                            <span><i class="fa-solid fa-layer-group"></i> Beginner</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">$75.00</div>
+                            <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+                        Aether<span class="logo-accent">Academy</span>
+                    </a>
+                    <p class="footer-desc">Redefining learning technology with beautiful interfaces and immersive educational workflows.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Platform</h4>
+                    <a href="#">Courses</a>
+                    <a href="#">Mentors</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Scholarships</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press Kit</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Subscribe to Updates</h4>
+                    <p>Get the latest course releases and technology guides straight to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AetherAcademy. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Script -->
+    <script src="main.js"></script>
+</body>
+</html>
